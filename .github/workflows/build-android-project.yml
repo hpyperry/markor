@@ -50,6 +50,8 @@ jobs:
 
     - name: "Build: Project with make"
       run: make clean all
+      env:
+        FLAVOR: Default
 
     - name: "Build: List dist files"
       if: always()
